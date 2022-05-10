@@ -8,6 +8,7 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 const toggleButton = document.querySelector(".toggle-button");
 const sidenav = document.querySelector(".sideNav");
 const toggleIcon = document.querySelector(".bx-slider");
+const closeIcon = document.querySelector(".bxs-x-square");
 
 sidenav.style.right = "-25em";
 toggleButton.addEventListener("click", () => {
@@ -18,7 +19,7 @@ toggleButton.addEventListener("click", () => {
   }
 });
 
-// toggle icon
-toggleButton.addEventListener("click", () => {
-  toggleIcon.classList.toggle("iColor");
+//close nav
+closeIcon.addEventListener("click", () => {
+  sidenav.style.right = "-25em";
 });
